@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>America's Best Contact Lens Estimator</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #EFEDE7;
+    }
+    .header-white-bg {
+      background-color: white;
+      padding: 20px 20px 10px 20px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 300px;
+      height: auto;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .form-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 10px 0;
+      white-space: nowrap;
+    }
+    .form-row label {
+      flex: 0 0 180px;
+      margin-right: 10px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .form-row input[type='text'],
+    .form-row input[type='number'],
+    .form-row select {
+      width: 373px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    #useClubPrice {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-left: 0;
+    }
+    .section-label {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #555;
+    }
+    .output {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .action-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .action-row button {
+      flex-shrink: 0;
+      margin-left: 5px;
+    }
+    hr.section-divider {
+      border: none;
+      border-top: 1px solid #999;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculatorPage" class="card">
+    <div class="header-white-bg">
+      <div class="logo-container">
+        <img src="ab-logo-072025.jpg" alt="America's Best Logo" class="logo" />
+      </div>
+      <h2>Annual Supply Savings Estimator</h2>
+    </div>
+
+    <!-- Vendor dropdown -->
+    <div class="form-row">
+      <label for="vendorSelect">Manufacturer:</label>
+      <select id="vendorSelect" onchange="filterProducts()">
+        <option disabled selected value="">-- Select a vendor --</option>
+      </select>
+    </div>
+
+    <!-- Product dropdown -->
+    <div class="form-row">
+      <label for="productSelect">Product:</label>
+      <select id="productSelect" onchange="updateFields()">
+        <option disabled selected value="">-- Select a product --</option>
+      </select>
+    </div>
+
+    <!-- Boxes per Year (readonly) -->
+    <div class="form-row">
+      <label for="boxCount">Boxes per Year:</label>
+      <input type="text" id="boxCount" readonly />
+    </div>
+
+    <!-- Price per Box (readonly) -->
+    <div class="form-row">
+      <label for="pricePerBox">Price per Box($):</label>
+      <input type="text" id="pricePerBox" readonly />
+    </div>
+
+    <hr class="section-divider" />
+
+    <div class="section-label">Discounts</div>
+
+    <div class="form-row">
+      <label for="useClubPrice">Eye Care Club Member:</label>
+      <input type="checkbox" id="useClubPrice" />
+    </div>
+
+    <!-- Wearer type selection -->
+    <div class="form-row">
+      <label>Wearer Type:</label>
+      <div>
+        <label><input type="radio" name="wearerType" value="existing" checked /> Existing Wearer</label>
+        <label style="margin-left: 20px;"><input type="radio" name="wearerType" value="new" /> New Wearer</label>
+      </div>
+    </div>
+
+    <!-- Rebate (readonly) -->
+    <div class="form-row">
+      <label for="rebate">Annual Supply Manufacturer Rebate($):</label>
+      <input type="text" id="rebate" readonly />
+    </div>
+
+    <!-- Managed Care input -->
+    <div class="form-row">
+      <label for="managedCare">Managed Care Benefit($):</label>
+      <input
+        type="number"
+        id="managedCare"
+        min="0"
+        max="10000"
+        placeholder="Enter amount if applicable"
+      />
+    </div>
+
+    <!-- Calculate / Reset buttons -->
+    <div class="action-row">
+      <div>
+        <button onclick="calculateTotal()">Calculate Annual Cost</button>
+        <button onclick="resetForm()">Reset</button>
+      </div>
+    </div>
+
+    <!-- Output -->
+    <div class="output" id="result"></div>
+  </div>
+
+  <p
+    style="
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: gray;
+      font-style: italic;
+      text-align: center;
+    "
+  >
+    Prices on this estimator may reflect discounts of ECC membership and manufacturer rebates for   
+    New or Existing wearers.  If applicable, post-purchase manufacturer rebates are submitted by 
+    customers directly to manufacturers. <br></br>
+    SDS pricing will differ as that system does not show manufacturer rebates. <br></br>
+    Price is an estimate. Final price is determined on the day of sale with exact
+    product selection.
+  </p>
+
+  <script>
+    let products = [];
+    let selectedProduct = null;
+
+    // Helper to convert string with $ or commas to number
+    function toNumber(val) {
+      if (val == null) return NaN;
+      const s = String(val).trim().replace(/\$/g, "").replace(/,/g, "");
+      const n = Number(s);
+      return isNaN(n) ? NaN : n;
+    }
+
+    async function loadProducts() {
+      try {
+        const response = await fetch("products.csv");
+        if (!response.ok) throw new Error("Failed to load products.csv");
+        const text = await response.text();
+
+        const lines = text.trim().split(/\r?\n/).filter((l) => l.trim().length > 0);
+        const firstLine = lines[0];
+        const delimiter = firstLine.includes("\t") && !firstLine.includes(",") ? "\t" : ",";
+
+        const headers = firstLine.split(delimiter).map((h) => h.trim());
+
+        products = lines.slice(1).map((line) => {
+          const values = line.split(delimiter);
+          const obj = {};
+          headers.forEach((h, i) => {
+            const key = h.trim();
+            let val = (values[i] ?? "").trim();
+            if (
+              key === "boxPrice" ||
+              key === "clubBoxPrice" ||
+              key === "existing" ||
+              key === "new"
+            ) {
+              const num = toNumber(val);
+              obj[key] = isNaN(num) ? 0 : num;
+            } else if (key === "annualBoxCount") {
+              const num = parseInt(val, 10);
+              obj[key] = isNaN(num) ? 0 : num;
+            } else {
+              obj[key] = val;
+            }
+          });
+          return obj;
+        });
+
+        populateVendors();
+      } catch (err) {
+        console.error(err);
+        alert(
+          "Could not load products.csv. Make sure it's in the same folder and you're using a local web server."
+        );
+      }
+    }
+
+    function populateVendors() {
+      const vendorDropdown = document.getElementById("vendorSelect");
+      vendorDropdown.innerHTML = '<option disabled selected value="">-- Select a vendor --</option>';
+
+      const vendors = [...new Set(products.map((p) => p.vendor))]
+        .filter(Boolean)
+        .sort();
+      vendors.forEach((vendor) => {
+        const option = document.createElement("option");
+        option.value = vendor;
+        option.textContent = vendor;
+        vendorDropdown.appendChild(option);
+      });
+    }
+
+    function filterProducts() {
+      const vendor = document.getElementById("vendorSelect").value;
+      const productDropdown = document.getElementById("productSelect");
+      productDropdown.innerHTML = '<option disabled selected value="">-- Select a product --</option>';
+
+      products
+        .filter((p) => p.vendor === vendor)
+        .forEach((product) => {
+          const option = document.createElement("option");
+          option.value = products.indexOf(product);
+          option.textContent = product.name;
+          productDropdown.appendChild(option);
+        });
+
+      // reset fields
+      document.getElementById("boxCount").value = "";
+      document.getElementById("pricePerBox").value = "";
+      document.getElementById("rebate").value = "";
+      document.getElementById("managedCare").value = "";
+      document.getElementById("useClubPrice").checked = false;
+      selectedProduct = null;
+      document.getElementById("result").innerText = "";
+    }
+
+    function updateFields() {
+      const index = document.getElementById("productSelect").value;
+      const useClub = document.getElementById("useClubPrice").checked;
+      if (index === "" || !products[index]) return;
+
+      selectedProduct = products[index];
+
+      const basePrice = useClub ? selectedProduct.clubBoxPrice : selectedProduct.boxPrice;
+
+      document.getElementById("pricePerBox").value =
+        typeof basePrice === "number" && !isNaN(basePrice) ? basePrice.toFixed(2) : "";
+
+      document.getElementById("boxCount").value = selectedProduct.annualBoxCount ?? "";
+
+      const wearerType = document.querySelector('input[name="wearerType"]:checked').value;
+
+      let rebateValue = wearerType === "new" ? selectedProduct.new : selectedProduct.existing;
+
+      document.getElementById("rebate").value =
+        typeof rebateValue === "number" && !isNaN(rebateValue) ? rebateValue.toFixed(2) : "0.00";
+
+      document.getElementById("result").innerText = "";
+    }
+
+    function calculateTotal() {
+      if (!selectedProduct) {
+        document.getElementById("result").innerText = "Please select a product.";
+        return;
+      }
+
+      const useClub = document.getElementById("useClubPrice").checked;
+      const boxCount = parseInt(document.getElementById("boxCount").value, 10) || 0;
+
+      const regularPrice = selectedProduct.boxPrice || 0;
+      const basePricePerBox =
+        useClub ? selectedProduct.clubBoxPrice || 0 : selectedProduct.boxPrice || 0;
+
+      const rebate = toNumber(document.getElementById("rebate").value) || 0;
+      const benefit = toNumber(document.getElementById("managedCare").value) || 0;
+
+      let total = basePricePerBox * boxCount - rebate - benefit;
+      if (total < 0) total = 0;
+
+      const perBoxActual = boxCount > 0 ? total / boxCount : 0;
+      const savingsPerBox = (regularPrice - perBoxActual).toFixed(2);
+
+      document.getElementById("result").innerHTML =
+  	`<span style="font-size:0.9em;">` +  // shrink entire results block
+  	`The regular box price of ${selectedProduct.name} is $${regularPrice.toFixed(2)}<br><br>` +
+  	`Purchasing an annual supply, your per box price becomes $${perBoxActual.toFixed(2)}<br><br>` +
+  	`That's a savings of $${savingsPerBox} per box and amounts to $${(parseFloat(savingsPerBox) * 	boxCount).toFixed(2)} in savings per year!` +
+  	`</span><br><br>` +
+  	`<span style="font-size:0.8em; color:#555;">Your total cost for the annual supply is $${total.toFixed(2)}	</span>`;
+
+
+    }
+
+    function resetForm() {
+      document.getElementById("vendorSelect").value = "";
+      document.getElementById("productSelect").innerHTML =
+        '<option disabled selected value="">-- Select a product --</option>';
+      document.getElementById("boxCount").value = "";
+      document.getElementById("pricePerBox").value = "";
+      document.getElementById("rebate").value = "";
+      document.getElementById("managedCare").value = "";
+      document.getElementById("useClubPrice").checked = false;
+      document.querySelector('input[name="wearerType"][value="existing"]').checked = true;
+      selectedProduct = null;
+      document.getElementById("result").innerText = "";
+    }
+
+    window.onload = () => {
+      loadProducts();
+      document.querySelectorAll('input[name="wearerType"]').forEach((radio) =>
+        radio.addEventListener("change", updateFields)
+      );
+      document.getElementById("useClubPrice").addEventListener("change", updateFields);
+    };
+  </script>
+</body>
+</html>
