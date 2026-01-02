@@ -1,112 +1,114 @@
-vendor,name,rivers,boxPrice,clubBoxPrice,annualBoxCount,existing,new
-Alcon,Air Optix Colors 2 Pack,37832,$57.99 ,$52.19 ,12,,
-Alcon,Air Optix Colors 6 Pack,33852,$142.49 ,$128.24 ,4,,
-Alcon,Air Optix Night & Day Aqua 6 Pack,15810,$132.49 ,$119.24 ,4,,
-Alcon,Air Optix Plus HydraGlyde 6 Pack,44735,$76.99 ,$69.29 ,4,,
-Alcon,Air Optix Plus HydraGlyde Multifocal,46731,$132.49 ,$119.24 ,4,,
-Alcon,Air Optix Plus HydraGlyde Toric,48012,$97.99 ,$88.19 ,4,,
-Alcon,Dailies AquaComfort Plus 30 Pack,43116,$37.99 ,$34.19 ,24,,
-Alcon,Dailies AquaComfort Plus 90 Pack,43119,$99.99 ,$89.99 ,8,,
-Alcon,Dailies AquaComfort Plus Multifocal 30 Pack,31974,$59.99 ,$53.99 ,24,,
-Alcon,Dailies AquaComfort Plus Multifocal 90 Pack,32362,$142.49 ,$128.24 ,8,,
-Alcon,Dailies AquaComfort Plus Toric 30 Pack,32468,$45.99 ,$41.39 ,24,,
-Alcon,Dailies AquaComfort Plus Toric 90 Pack,32532,$123.49 ,$111.14 ,8,,
-Alcon,Dailies Colors 30 Pack,48041,$46.99 ,$42.29 ,24,,
-Alcon,Dailies Colors 90 Pack,48042,$98.99 ,$89.09 ,8,,
-Alcon,Dailies Total 1 30 Pack,31046,$58.99 ,$53.09 ,24,,
-Alcon,Dailies Total 1 90 Pack,31044,$143.49 ,$129.14 ,8,$200.00 ,$250.00 
-Alcon,Dailies Total 1 for Astigmatism 30 Pack,50211,$67.99 ,$61.19 ,24,,
-Alcon,Dailies Total 1 for Astigmatism 90 Pack,50212,$165.99 ,$149.39 ,8,$200.00 ,$250.00 
-Alcon,Dailies Total 1 Multifocal 30 Pack,41489,$75.99 ,$68.39 ,24,,
-Alcon,Dailies Total 1 Multifocal 90 Pack,41503,$174.99 ,$157.49 ,8,$200.00 ,$250.00 
-Alcon,Precision 1 30 Pack,48790,$44.99 ,$40.49 ,24,,
-Alcon,Precision 1 90 Pack,48791,$93.49 ,$84.14 ,8,,
-Alcon,Precision 1 for Astigmatism 30 Pack,49311,$59.49 ,$53.54 ,24,,
-Alcon,Precision 1 for Astigmatism 90 Pack,49312,$124.49 ,$112.04 ,8,$150.00 ,$200.00 
-Alcon,Precision 7 12 Pack,51699,$75.99 ,$68.39 ,8,,
-Alcon,Precision 7 27 Pack,51731,$131.99 ,$118.79 ,4,$100.00 ,$100.00 
-Alcon,Precision 7 for Astigmatism 12 Pack,51753,$96.99 ,$87.29 ,8,$100.00 ,$100.00 
-Alcon,Precision 7 for Astigmatism 27 Pack,51754,$160.99 ,$144.89 ,4,,
-Alcon,Total 30,49887,$84.99 ,$76.49 ,4,$75.00 ,$100.00 
-Alcon,Total 30 for Astigmatism,50533,$97.99 ,$88.19 ,4,$75.00 ,$100.00 
-Alcon,Total 30 Multifocal,50958,$126.99 ,$114.29 ,4,$75.00 ,$100.00 
-B+L,Biotrue ONEday 30 Pack,31606,$39.99 ,$35.99 ,24,,
-B+L,Biotrue ONEday 90 Pack,30556,$87.99 ,$79.19 ,8,$100.00 ,$200.00 
-B+L,Biotrue ONEday for Astigmatism 30 Pack,42105,$52.49 ,$47.24 ,24,,
-B+L,Biotrue ONEday for Astigmatism 90 Pack,46373,$107.99 ,$97.19 ,8,$100.00 ,$200.00 
-B+L,Biotrue ONEday Multifocal 30 Pack,38955,$55.99 ,$50.39 ,24,,
-B+L,Biotrue ONEday Multifocal 90 Pack,45907,$123.49 ,$111.14 ,8,$100.00 ,$200.00 
-B+L,Infuse 90 Pack,49115,$126.99 ,$114.29 ,8,$150.00 ,$300.00 
-B+L,Infuse for Astigmatism 90 Pack,51420,$175.99 ,$158.39 ,8,$150.00 ,$300.00 
-B+L,Infuse Multifocal 90 Pack,50729,$184.99 ,$166.49 ,8,$150.00 ,$300.00 
-B+L,Ultra,36089,$76.99 ,$69.29 ,4,$40.00 ,$60.00 
-B+L,Ultra for Astigmatism,43431,$87.99 ,$79.19 ,4,$40.00 ,$60.00 
-B+L,Ultra Multifocal,39795,$106.99 ,$96.29 ,4,$40.00 ,$60.00 
-B+L,Ultra Multifocal Toric,48048,$172.49 ,$155.24 ,4,$40.00 ,$60.00 
-Cooper,Avaira Vitality,41382,$48.99 ,$44.09 ,8,,
-Cooper,Avaira Vitality Toric,42991,$58.99 ,$53.09 ,8,,
-Cooper,Biofinity,12970,$66.99 ,$60.29 ,4,$30.00 ,$30.00 
-Cooper,Biofinity Energys,41791,$75.99 ,$68.39 ,4,$60.00 ,$60.00 
-Cooper,Biofinity Multifocal,26099,$106.99 ,$96.29 ,4,$50.00 ,$50.00 
-Cooper,Biofinity Toric,16846,$81.99 ,$73.79 ,4,$50.00 ,$50.00 
-Cooper,Biofinity Toric Multifocal,48925,$198.99 ,$179.09 ,4,,
-Cooper,Biofinity XR,31655,$82.49 ,$74.24 ,4,$30.00 ,$30.00 
-Cooper,Biofinity XR Toric,49598,$182.49 ,$164.24 ,4,,
-Cooper,Clariti 1-Day 180 Pack,52352,$156.99 ,141.29,4,,
-Cooper,Clariti 1-Day 30 Pack,46894,$43.99 ,$39.59 ,24,$100.00 ,$200.00 
-Cooper,Clariti 1-Day 90 Pack,37032,$87.99 ,$79.19 ,8,$100.00 ,$200.00 
-Cooper,Clariti 1-Day Multifocal 3 30 Pack,51333,$76.99 ,$69.29 ,24,$100.00 ,$200.00 
-Cooper,Clariti 1-Day Multifocal 3 90 Pack,51330,$110.49 ,$99.44 ,8,$100.00 ,$200.00 
-Cooper,Clariti 1-Day Toric 30 Pack,36861,$64.99 ,$58.49 ,24,$100.00 ,$200.00 
-Cooper,Clariti 1-Day Toric 90 Pack,42588,$107.99 ,$97.19 ,8,$100.00 ,$200.00 
-Cooper,MiSight 180 Pack,49448,$355.99 ,$285.99 ,4,$200.00 ,$200.00 
-Cooper,MiSight 90 Pack,50209,$177.99 ,$143.99 ,8,$200.00 ,$200.00 
-Cooper,MyDay 180 Pack,41772,$175.99 ,$158.39 ,4,$100.00 ,$200.00 
-Cooper,MyDay 90 Pack,38585,$107.99 ,$97.19 ,8,$100.00 ,$200.00 
-Cooper,MyDay Energys 90 Pack,50617,$124.99 ,$112.49 ,8,$100.00 ,$200.00 
-Cooper,MyDay Multifocal 90 Pack,49924,$171.49 ,$154.34 ,8,$100.00 ,$200.00 
-Cooper,MyDay Toric 90 Pack,45385,$124.99 ,$112.49 ,8,$100.00 ,$200.00 
-Cooper,Proclear 1 Day 90 Pack,13027,$111.49 ,$100.34 ,8,,
-Cooper,Proclear 1-Day Multifocal 90 Pack,35794,$132.49 ,$119.24 ,8,,
-Cooper,Proclear Multifocal,10512,$140.49 ,$126.44 ,4,,
-Cooper,Proclear Multifocal Toric,11331,$217.99 ,$196.19 ,4,,
-Cooper,Proclear Multifocal XR,14971,$221.49 ,$199.34 ,4,,
-Cooper,Proclear Sphere,10494,$80.49 ,$72.44 ,4,,
-Cooper,Proclear Toric,10505,$117.99 ,$106.19 ,4,,
-Cooper,Proclear Toric XR,11496,$216.99 ,$195.29 ,4,,
-J&J,1-Day Acuvue Define 30 Pack,46746,$73.49 ,$66.14 ,24,,
-J&J,1-Day Acuvue Moist 30 Pack,4196,$62.49 ,$56.24 ,24,$100.00 ,$150.00 
-J&J,1-Day Acuvue Moist 90 Pack,20124,$114.99 ,$103.49 ,8,$100.00 ,$150.00 
-J&J,1-Day Acuvue Moist Multifocal 30 Pack,37388,$80.49 ,$72.44 ,24,$100.00 ,$150.00 
-J&J,1-Day Acuvue Moist Multifocal 90 Pack,37522,$154.49 ,$139.04 ,8,$100.00 ,$150.00 
-J&J,1-Day Acuvue Moist Toric 30 Pack,28206,$65.99 ,$59.39 ,24,$100.00 ,$150.00 
-J&J,1-Day Acuvue Moist Toric 90 Pack,36512,$133.49 ,$120.14 ,8,$100.00 ,$150.00 
-J&J,Acuvue 2,6889,$62.49 ,$56.24 ,8,,
-J&J,Acuvue Oasys 12 Pack,34139,$108.99 ,$98.09 ,4,$50.00 ,$100.00 
-J&J,Acuvue Oasys 1-Day for Astigmatism 30 Pack,42928,$73.99 ,$66.59 ,24,$100.00 ,$150.00 
-J&J,Acuvue Oasys 1-Day for Astigmatism 90 Pack,49313,$154.99 ,$139.49 ,8,$100.00 ,$250.00 
-J&J,Acuvue Oasys 1-Day w/ Hydraluxe 90 Pack,38696,$128.99 ,$116.09 ,8,$100.00 ,$250.00 
-J&J,Acuvue Oasys 24 Pack,29986,$216.99 ,$195.29 ,2,$50.00 ,$100.00 
-J&J,Acuvue Oasys Bandage,36138,$35.99 ,$32.39 ,8,,
-J&J,Acuvue Oasys for Astigmatism,13694,$77.99 ,$70.19 ,8,$50.00 ,$100.00 
-J&J,Acuvue Oasys Max 1-Day 30 Pack,50680,$68.99 ,$62.09 ,24,$100.00 ,$250.00 
-J&J,Acuvue Oasys Max 1-Day 90 Pack,50681,$153.49 ,$138.14 ,8,$100.00 ,$250.00 
-J&J,Acuvue Oasys Max 1-Day Multifocal 30 Pack,50685,$90.49 ,$81.44 ,24,$100.00 ,$250.00 
-J&J,Acuvue Oasys Max 1-Day Multifocal 90 Pack,50688,$195.99 ,$176.39 ,8,$100.00 ,$250.00 
-J&J,Acuvue Oasys Multifocal,49385,$71.49 ,$64.34 ,8,$50.00 ,$100.00 
-J&J,Acuvue Vita 12 Pack,42103,$157.99 ,$142.19 ,2,$50.00 ,$100.00 
-J&J,Acuvue Vita 6 Pack,41257,$97.99 ,$88.19 ,4,$50.00 ,$100.00 
-J&J,Acuvue Vita Toric,44501,$97.99 ,$88.19 ,4,$50.00 ,$100.00 
-Sofmed,Sofmed Breathables 1-Day 90 Pack,41750,$77.99 ,$55.99 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables 1-Day Advanced Multifocal 90 Pack,51340,$104.99 ,$94.49 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables 1-Day Multifocal 90 Pack,50575,$104.99 ,$88.99 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables 1-Day Toric,46034,$94.99 ,$79.99 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables Advanced,41695,$39.99 ,$29.99 ,8,,
-Sofmed,Sofmed Breathables Advanced Toric,41758,$49.99 ,$36.99 ,8,,
-Sofmed,Sofmed Breathables Ultimate 1-Day 90 Pack,50789,$90.99 ,$73.99 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables Ultimate 1-Day Multifocal 90 Pack,50792,$157.99 ,$128.99 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables Ultimate 1-Day Toric 90 Pack,50798,$110.99 ,$92.99 ,8,$100.00 ,$100.00 
-Sofmed,Sofmed Breathables XW,46654,$58.99 ,$45.99 ,4,$30.00 ,$30.00 
-Sofmed,Sofmed Breathables XW Extended Parameters,51497,$58.99 ,$45.99 ,4,$30.00 ,$30.00 
-Sofmed,Sofmed Breathables XW Multifocal,46225,$97.99 ,$69.99 ,4,$50.00 ,$50.00 
-Sofmed,Sofmed Breathables XW Toric,30489,$72.99 ,$58.99 ,4,$50.00 ,$50.00 
+vendor,name,rivers,boxPrice,clubBoxPrice,annualBoxCount,existing,new,,,,
+Alcon,Air Optix Colors 2 Pack,37832,$57.99 ,$52.19 ,12,,,,,,
+Alcon,Air Optix Colors 6 Pack,33852,$142.49 ,$128.24 ,4,,,,,,
+Alcon,Air Optix Night & Day Aqua 6 Pack,15810,$132.49 ,$119.24 ,4,,,,,,
+Alcon,Air Optix Plus HydraGlyde 6 Pack,44735,$76.99 ,$69.29 ,4,,,,,,
+Alcon,Air Optix Plus HydraGlyde Multifocal,46731,$132.49 ,$119.24 ,4,,,,,,
+Alcon,Air Optix Plus HydraGlyde Toric,48012,$97.99 ,$88.19 ,4,,,,,,
+Alcon,Dailies AquaComfort Plus 30 Pack,43116,$37.99 ,$34.19 ,24,,,,,,
+Alcon,Dailies AquaComfort Plus 90 Pack,43119,$99.99 ,$89.99 ,8,,,,,,
+Alcon,Dailies AquaComfort Plus Multifocal 30 Pack,31974,$59.99 ,$53.99 ,24,,,,,,
+Alcon,Dailies AquaComfort Plus Multifocal 90 Pack,32362,$142.49 ,$128.24 ,8,,,,,,
+Alcon,Dailies AquaComfort Plus Toric 30 Pack,32468,$45.99 ,$41.39 ,24,,,,,,
+Alcon,Dailies AquaComfort Plus Toric 90 Pack,32532,$123.49 ,$111.14 ,8,,,,,,
+Alcon,Dailies Colors 30 Pack,48041,$46.99 ,$42.29 ,24,,,,,,
+Alcon,Dailies Colors 90 Pack,48042,$98.99 ,$89.09 ,8,,,,,,
+Alcon,Dailies Total 1 30 Pack,31046,$58.99 ,$53.09 ,24,,,,,,
+Alcon,Dailies Total 1 90 Pack,31044,$143.49 ,$129.14 ,8,$200.00 ,$250.00 ,,,,
+Alcon,Dailies Total 1 for Astigmatism 30 Pack,50211,$67.99 ,$61.19 ,24,,,,,,
+Alcon,Dailies Total 1 for Astigmatism 90 Pack,50212,$165.99 ,$149.39 ,8,$200.00 ,$250.00 ,,,,
+Alcon,Dailies Total 1 Multifocal 30 Pack,41489,$75.99 ,$68.39 ,24,,,,,,
+Alcon,Dailies Total 1 Multifocal 90 Pack,41503,$174.99 ,$157.49 ,8,$200.00 ,$250.00 ,,,,
+Alcon,Precision 1 30 Pack,48790,$44.99 ,$40.49 ,24,,,,,,
+Alcon,Precision 1 90 Pack,48791,$93.49 ,$84.14 ,8,,,,,,
+Alcon,Precision 1 for Astigmatism 30 Pack,49311,$59.49 ,$53.54 ,24,,,,,,
+Alcon,Precision 1 for Astigmatism 90 Pack,49312,$124.49 ,$112.04 ,8,$150.00 ,$200.00 ,,,,
+Alcon,Precision 7 12 Pack,51699,$75.99 ,$68.39 ,8,,,,,,
+Alcon,Precision 7 27 Pack,51731,$131.99 ,$118.79 ,4,$100.00 ,$100.00 ,,,,
+Alcon,Precision 7 for Astigmatism 12 Pack,51753,$96.99 ,$87.29 ,8,$100.00 ,$100.00 ,,,,
+Alcon,Precision 7 for Astigmatism 27 Pack,51754,$160.99 ,$144.89 ,4,,,,,,
+Alcon,Total 30,49887,$84.99 ,$76.49 ,4,$75.00 ,$100.00 ,,,,
+Alcon,Total 30 for Astigmatism,50533,$97.99 ,$88.19 ,4,$75.00 ,$100.00 ,,,,
+Alcon,Total 30 Multifocal,50958,$126.99 ,$114.29 ,4,$75.00 ,$100.00 ,,,,
+B+L,Biotrue ONEday 30 Pack,31606,$39.99 ,$35.99 ,24,,,,,,
+B+L,Biotrue ONEday 90 Pack,30556,$87.99 ,$79.19 ,8,$100.00 ,$200.00 ,,,,
+B+L,Biotrue ONEday for Astigmatism 30 Pack,42105,$52.49 ,$47.24 ,24,,,,,,
+B+L,Biotrue ONEday for Astigmatism 90 Pack,46373,$107.99 ,$97.19 ,8,$100.00 ,$200.00 ,,,,
+B+L,Biotrue ONEday Multifocal 30 Pack,38955,$55.99 ,$50.39 ,24,,,,,,
+B+L,Biotrue ONEday Multifocal 90 Pack,45907,$123.49 ,$111.14 ,8,$100.00 ,$200.00 ,,,,
+B+L,Infuse 90 Pack,49115,$126.99 ,$114.29 ,8,$150.00 ,$250.00 ,,,,
+B+L,Infuse for Astigmatism 90 Pack,51420,$175.99 ,$158.39 ,8,$150.00 ,$250.00 ,,,,
+B+L,Infuse Multifocal 90 Pack,50729,$184.99 ,$166.49 ,8,$150.00 ,$250.00 ,,,,
+B+L,Ultra,36089,$76.99 ,$69.29 ,4,$40.00 ,$60.00 ,,,,
+B+L,Ultra for Astigmatism,43431,$87.99 ,$79.19 ,4,$40.00 ,$60.00 ,,,,
+B+L,Ultra Multifocal,39795,$106.99 ,$96.29 ,4,$40.00 ,$60.00 ,,,,
+B+L,Ultra Multifocal Toric,48048,$172.49 ,$155.24 ,4,$40.00 ,$60.00 ,,,,
+Cooper,Avaira Vitality,41382,$48.99 ,$44.09 ,8,,,,,,
+Cooper,Avaira Vitality Toric,42991,$58.99 ,$53.09 ,8,,,,,,
+Cooper,Biofinity,12970,$66.99 ,$60.29 ,4,$30.00 ,$30.00 ,,,,
+Cooper,Biofinity Energys,41791,$75.99 ,$68.39 ,4,$75.00 ,$75.00 ,,,,
+Cooper,Biofinity Multifocal,26099,$106.99 ,$96.29 ,4,$50.00 ,$50.00 ,,,,
+Cooper,Biofinity Toric,16846,$81.99 ,$73.79 ,4,$50.00 ,$50.00 ,,,,
+Cooper,Biofinity Toric Multifocal,48925,$198.99 ,$179.09 ,4,,,,,,
+Cooper,Biofinity XR,31655,$82.49 ,$74.24 ,4,$30.00 ,$30.00 ,,,,
+Cooper,Biofinity XR Toric,49598,$182.49 ,$164.24 ,4,,,,,,
+Cooper,Clariti 1-Day 180 Pack,52352,$156.99 ,$141.29 ,4,,,,,,
+Cooper,Clariti 1-Day 30 Pack,46894,$43.99 ,$39.59 ,24,$75.00 ,$175.00 ,,,,
+Cooper,Clariti 1-Day 90 Pack,37032,$87.99 ,$79.19 ,8,$75.00 ,$175.00 ,,,,
+Cooper,Clariti 1-Day Multifocal 3 30 Pack,51333,$76.99 ,$69.29 ,24,$75.00 ,$175.00 ,,,,
+Cooper,Clariti 1-Day Multifocal 3 90 Pack,51330,$110.49 ,$99.44 ,8,$75.00 ,$175.00 ,,,,
+Cooper,Clariti 1-Day Toric 30 Pack,36861,$64.99 ,$58.49 ,24,$75.00 ,$175.00 ,,,,
+Cooper,Clariti 1-Day Toric 90 Pack,42588,$107.99 ,$97.19 ,8,$75.00 ,$175.00 ,,,,
+Cooper,MiSight 180 Pack,49448,$355.99 ,$320.39 ,4,$200.00 ,$200.00 ,,,,
+Cooper,MiSight 90 Pack,50209,$177.99 ,$160.19 ,8,$200.00 ,$200.00 ,,,,
+Cooper,MyDay 180 Pack,41772,$175.99 ,$158.39 ,4,$100.00 ,$225.00 ,,,,
+Cooper,MyDay 90 Pack,38585,$107.99 ,$97.19 ,8,$100.00 ,$225.00 ,,,,
+Cooper,MyDay Energys 90 Pack,50617,$124.99 ,$112.49 ,8,$100.00 ,$225.00 ,,,,
+Cooper,MyDay Multifocal 90 Pack,49924,$171.49 ,$154.34 ,8,$100.00 ,$225.00 ,,,,
+Cooper,MyDay Toric 90 Pack,45385,$124.99 ,$112.49 ,8,$100.00 ,$225.00 ,,,,
+Cooper,Proclear 1 Day 90 Pack,13027,$111.49 ,$100.34 ,8,,,,,,
+Cooper,Proclear 1-Day Multifocal 90 Pack,35794,$132.49 ,$119.24 ,8,,,,,,
+Cooper,Proclear Multifocal,10512,$140.49 ,$126.44 ,4,,,,,,
+Cooper,Proclear Multifocal Toric,11331,$217.99 ,$196.19 ,4,,,,,,
+Cooper,Proclear Multifocal XR,14971,$221.49 ,$199.34 ,4,,,,,,
+Cooper,Proclear Sphere,10494,$80.49 ,$72.44 ,4,,,,,,
+Cooper,Proclear Toric,10505,$117.99 ,$106.19 ,4,,,,,,
+Cooper,Proclear Toric XR,11496,$216.99 ,$195.29 ,4,,,,,,
+J&J,1-Day Acuvue Define 30 Pack,46746,$73.49 ,$66.14 ,24,,,,,,
+J&J,1-Day Acuvue Moist 30 Pack,4196,$62.49 ,$56.24 ,24,$50.00 ,$100.00 ,,,,
+J&J,1-Day Acuvue Moist 90 Pack,20124,$114.99 ,$103.49 ,8,$50.00 ,$100.00 ,,,,
+J&J,1-Day Acuvue Moist Multifocal 30 Pack,37388,$80.49 ,$72.44 ,24,$50.00 ,$100.00 ,,,,
+J&J,1-Day Acuvue Moist Multifocal 90 Pack,37522,$154.49 ,$139.04 ,8,$50.00 ,$100.00 ,,,,
+J&J,1-Day Acuvue Moist Toric 30 Pack,28206,$65.99 ,$59.39 ,24,$50.00 ,$100.00 ,,,,
+J&J,1-Day Acuvue Moist Toric 90 Pack,36512,$133.49 ,$120.14 ,8,$50.00 ,$100.00 ,,,,
+J&J,Acuvue 2,6889,$62.49 ,$56.24 ,8,,,,,,
+J&J,Acuvue Oasys 12 Pack,34139,$108.99 ,$98.09 ,4,$50.00 ,$100.00 ,,,,
+J&J,Acuvue Oasys 1-Day for Astigmatism 30 Pack,42928,$73.99 ,$66.59 ,24,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys 1-Day for Astigmatism 90 Pack,49313,$154.99 ,$139.49 ,8,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys 1-Day w/ Hydraluxe 90 Pack,38696,$128.99 ,$116.09 ,8,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys 24 Pack,29986,$216.99 ,$195.29 ,2,$50.00 ,$100.00 ,,,,
+J&J,Acuvue Oasys Bandage,36138,$35.99 ,$32.39 ,8,,,,,,
+J&J,Acuvue Oasys for Astigmatism,13694,$77.99 ,$70.19 ,8,$50.00 ,$100.00 ,,,,
+J&J,Acuvue Oasys Max 1-Day 30 Pack,50680,$68.99 ,$62.09 ,24,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys Max 1-Day 90 Pack,50681,$153.49 ,$138.14 ,8,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys Max 1-Day Multifocal 30 Pack,50685,$90.49 ,$81.44 ,24,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys Max 1-Day Multifocal 90 Pack,50688,$195.99 ,$176.39 ,8,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys Max 1-Day Multifocal Toric 30 Pack,52586,$77.99 ,$64.34 ,24,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys Max 1-Day Toric 30 Pack,52598,$67.99 ,$70.19 ,24,$100.00 ,$250.00 ,,,,
+J&J,Acuvue Oasys Multifocal,49385,$71.49 ,$64.34 ,8,$50.00 ,$100.00 ,,,,
+J&J,Acuvue Vita 12 Pack,42103,$157.99 ,$142.19 ,2,$50.00 ,$100.00 ,,,,
+J&J,Acuvue Vita 6 Pack,41257,$97.99 ,$88.19 ,4,$50.00 ,$100.00 ,,,,
+J&J,Acuvue Vita Toric,44501,$97.99 ,$88.19 ,4,$50.00 ,$100.00 ,,,,
+Sofmed,Sofmed Breathables 1-Day 90 Pack,41750,$77.99 ,$55.99 ,8,$75.00 ,$175.00 ,,,,
+Sofmed,Sofmed Breathables 1-Day Advanced Multifocal 90 Pack,51340,$104.99 ,$88.99 ,8,$75.00 ,$175.00 ,,,,
+Sofmed,Sofmed Breathables 1-Day Multifocal 90 Pack,50575,$104.99 ,$88.99 ,8,,,,,,
+Sofmed,Sofmed Breathables 1-Day Toric,46034,$94.99 ,$79.99 ,8,$75.00 ,$175.00 ,,,,
+Sofmed,Sofmed Breathables Advanced,41695,$39.99 ,$29.99 ,8,,,,,,
+Sofmed,Sofmed Breathables Advanced Toric,41758,$49.99 ,$36.99 ,8,,,,,,
+Sofmed,Sofmed Breathables Ultimate 1-Day 90 Pack,50789,$90.99 ,$73.99 ,8,$100.00 ,$225.00 ,,,,
+Sofmed,Sofmed Breathables Ultimate 1-Day Multifocal 90 Pack,50792,$157.99 ,$128.99 ,8,$100.00 ,$225.00 ,,,,
+Sofmed,Sofmed Breathables Ultimate 1-Day Toric 90 Pack,50798,$110.99 ,$92.99 ,8,$100.00 ,$225.00 ,,,,
+Sofmed,Sofmed Breathables XW,46654,$58.99 ,$45.99 ,4,$30.00 ,$30.00 ,,,,
+Sofmed,Sofmed Breathables XW Extended Parameters,51497,$58.99 ,$45.99 ,4,$30.00 ,$30.00 ,,,,
+Sofmed,Sofmed Breathables XW Multifocal,46225,$97.99 ,$69.99 ,4,$50.00 ,$50.00 ,,,,
+Sofmed,Sofmed Breathables XW Toric,30489,$72.99 ,$58.99 ,4,$50.00 ,$50.00 ,,,,
